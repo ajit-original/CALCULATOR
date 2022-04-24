@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div id="main">
+        <div id="buttonDiv">
+            <input type="text" value="" id="output" placeholder="0" disabled>
+            <input type="button" value="CE" id="reset" onclick="reset()">
+        </div>
+        <div id="buttonDiv">
+            <input type="button" value="7" class="btn" id="7" onclick="btnInput('7')">
+            <input type="button" value="8" class="btn" id="8" onclick="btnInput('8')">
+            <input type="button" value="9" class="btn" id="9" onclick="btnInput('9')">
+            <input type="button" value="+" class="btn" id="+" onclick="btnSymbol('+')">
+        </div>
+        <div id="buttonDiv">
+            <input type="button" value="4" class="btn" id="4" onclick="btnInput('4')">
+            <input type="button" value="5" class="btn" id="5" onclick="btnInput('5')">
+            <input type="button" value="6" class="btn" id="6" onclick="btnInput('6')">
+            <input type="button" value="-" class="btn" id="-" onclick="btnSymbol('-')">
+        </div>
+        <div id="buttonDiv">
+            <input type="button" value="1" class="btn" id="1" onclick="btnInput('1')">
+            <input type="button" value="2" class="btn" id="2" onclick="btnInput('2')">
+            <input type="button" value="3" class="btn" id="3" onclick="btnInput('3')">
+            <input type="button" value="*" class="btn" id="*" onclick="btnSymbol('*')">
+        </div>
+        <div id="buttonDiv">
+            <input type="button" value="." class="btn" id="dot" onclick="btnSymbol('.')">
+            <input type="button" value="0" class="btn" id="0" onclick="btnSymbol('0')">
+            <input type="button" value="=" class="btn" id="equal" onclick="result()">
+            <input type="button" value="/" class="btn" id="/" onclick="btnSymbol('/')">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
